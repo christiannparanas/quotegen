@@ -22,7 +22,6 @@ function fetchQuote() {
       return response.json()
    })
    .then( data => {
-      console.log(data)
       quote.innerHTML = data.content;
       author.innerHTML = data.originator.name;
       main.style.display = "block"
@@ -38,3 +37,10 @@ function fetchQuote() {
 }
 
 fetchQuote()
+
+// clipboard
+var clipboard = new ClipboardJS('.save');
+
+clipboard.on('success', function(e) {
+    e.clearSelection();
+});

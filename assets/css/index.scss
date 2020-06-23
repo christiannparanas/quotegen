@@ -96,6 +96,8 @@ main {
       }
 
       .options {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
          margin-top: 25px;
          width: 80%;
          margin: 20px auto;
@@ -103,12 +105,12 @@ main {
          button {
             color: #fff;
             border-radius: 7px;
-background: #50B69F;
-box-shadow:  5px 5px 13px #48a48f, 
-             -5px -5px 13px #58c8af;
+            background: #50B69F;
+            box-shadow:  5px 5px 13px #48a48f, 
+                         -5px -5px 13px #58c8af;
 
 
-            width: 100px;
+            width: 120px;
             border: 0;
             outline: 0;
             padding: 10px;
@@ -116,13 +118,13 @@ box-shadow:  5px 5px 13px #48a48f,
 
          button:hover {
             border-radius: 7px;
-background: #50B69F;
-box-shadow: inset 5px 5px 13px #48a48f, 
-            inset -5px -5px 13px #58c8af;
+            background: #50B69F;
+            box-shadow: inset 5px 5px 13px #48a48f, 
+               inset -5px -5px 13px #58c8af;
          }
 
          .save {
-            margin-left: 20px;
+            
          }
          
          .new {

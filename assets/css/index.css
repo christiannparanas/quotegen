@@ -113,6 +113,10 @@ main .container .quote-container .author {
 }
 
 main .container .options {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   margin-top: 25px;
   width: 80%;
   margin: 20px auto;
@@ -124,7 +128,7 @@ main .container .options button {
   background: #50B69F;
   -webkit-box-shadow: 5px 5px 13px #48a48f,  -5px -5px 13px #58c8af;
           box-shadow: 5px 5px 13px #48a48f,  -5px -5px 13px #58c8af;
-  width: 100px;
+  width: 120px;
   border: 0;
   outline: 0;
   padding: 10px;
@@ -135,10 +139,6 @@ main .container .options button:hover {
   background: #50B69F;
   -webkit-box-shadow: inset 5px 5px 13px #48a48f,  inset -5px -5px 13px #58c8af;
           box-shadow: inset 5px 5px 13px #48a48f,  inset -5px -5px 13px #58c8af;
-}
-
-main .container .options .save {
-  margin-left: 20px;
 }
 
 main .container .options .new {
