@@ -10,24 +10,73 @@
 
 body {
    width: 100%;
-   background-color: #2B0059;
+   background-color: #50B69F;
    color: #fff;
 }
 
+
+// loader
+.loader {
+   position: fixed;
+   width: 100vw;
+   height: 100%;
+   text-align: center;
+   padding-top: 40vh;
+   background-color: #50B69F;
+
+   .lds-ripple {
+      display: inline-block;
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
+   
+    .lds-ripple div {
+      position: absolute;
+      border: 4px solid #fff;
+      opacity: 1;
+      border-radius: 50%;
+      animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+   
+    .lds-ripple div:nth-child(2) {
+      animation-delay: -0.5s;
+    }
+   
+    @keyframes lds-ripple {
+      0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+      }
+      100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+      }
+    }   
+}
+
+// main
 main {
+   display: none;
    width: 100vw;
    height: 100vh;
-   padding-top: 25vh;
+   padding-top: 20vh;
 
    .container {
       width: 80%;
       margin: 0 auto;
       
       .quote-container {
-         border-radius: 5px;
-         background: #2B0059;
-         box-shadow:  6px 5px 8px #25004d, 
-                     -6px -5px 8px #310065;
+         border-radius: 8px;
+         background: #50B69F;
+         box-shadow:  6px 6px 7px #4cad97, 
+                      -6px -6px 7px #54bfa7;
         
          padding: 20px;
 
@@ -53,15 +102,23 @@ main {
 
          button {
             color: #fff;
-            border-radius: 5px;
-            background: #2B0059;
-            box-shadow:  4px 9px 9px #25004d, 
-                     -4px -9px 9px #310065;
+            border-radius: 7px;
+background: #50B69F;
+box-shadow:  5px 5px 13px #48a48f, 
+             -5px -5px 13px #58c8af;
+
 
             width: 100px;
             border: 0;
             outline: 0;
             padding: 10px;
+         }
+
+         button:hover {
+            border-radius: 7px;
+background: #50B69F;
+box-shadow: inset 5px 5px 13px #48a48f, 
+            inset -5px -5px 13px #58c8af;
          }
 
          .save {
