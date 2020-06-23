@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: #2B0059;
+  color: #fff;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 30vh;
+}
+
+main .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .container .quote-container {
+  border-radius: 8px;
+  background: #350964;
+  -webkit-box-shadow: 5px 5px 10px #2d0855,  -5px -5px 10px #3d0a73;
+          box-shadow: 5px 5px 10px #2d0855,  -5px -5px 10px #3d0a73;
+  padding: 20px;
+}
+
+main .container .quote-container .quote {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+main .container .quote-container .quote img {
+  width: 30px;
+}
+
+main .container .quote-container .author {
+  margin-top: 20px;
+  text-align: end;
+}
+
+main .container .options {
+  margin-top: 30px;
+}
+
+main .container .options button {
+  color: #fff;
+  border-radius: 2px;
+  background: #11092A;
+  -webkit-box-shadow: 3px 3px 0px #0c061d,  -3px -3px 0px #160c37;
+          box-shadow: 3px 3px 0px #0c061d,  -3px -3px 0px #160c37;
+  width: 100px;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+}
+
+main .container .options .save {
+  margin-left: 20px;
+}
+
+main .container .options .new {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=index.css.map */
