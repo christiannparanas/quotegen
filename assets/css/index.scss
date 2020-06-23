@@ -17,17 +17,17 @@ body {
 main {
    width: 100vw;
    height: 100vh;
-   padding-top: 30vh;
+   padding-top: 25vh;
 
    .container {
       width: 80%;
       margin: 0 auto;
       
       .quote-container {
-         border-radius: 8px;
-         background: #350964;
-         box-shadow:  5px 5px 10px #2d0855, 
-                      -5px -5px 10px #3d0a73;
+         border-radius: 5px;
+         background: #2B0059;
+         box-shadow:  6px 5px 8px #25004d, 
+                     -6px -5px 8px #310065;
         
          padding: 20px;
 
@@ -47,15 +47,17 @@ main {
       }
 
       .options {
-         margin-top: 30px;
+         margin-top: 25px;
+         width: 80%;
+         margin: 20px auto;
 
          button {
             color: #fff;
-            border-radius: 2px;
-            background: #11092A;
-            box-shadow:  3px 3px 0px #0c061d, 
-                         -3px -3px 0px #160c37;
-            
+            border-radius: 5px;
+            background: #2B0059;
+            box-shadow:  4px 9px 9px #25004d, 
+                     -4px -9px 9px #310065;
+
             width: 100px;
             border: 0;
             outline: 0;
