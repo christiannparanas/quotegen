@@ -117,6 +117,7 @@ main .container .options {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  justify-items: center;
   margin-top: 25px;
   width: 80%;
   margin: 20px auto;
@@ -134,7 +135,7 @@ main .container .options button {
   padding: 10px;
 }
 
-main .container .options button:hover {
+main .container .options button:focus {
   border-radius: 7px;
   background: #50B69F;
   -webkit-box-shadow: inset 5px 5px 13px #48a48f,  inset -5px -5px 13px #58c8af;
@@ -143,5 +144,11 @@ main .container .options button:hover {
 
 main .container .options .new {
   margin-left: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */

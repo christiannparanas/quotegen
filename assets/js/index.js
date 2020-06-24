@@ -25,11 +25,10 @@ function fetchQuote() {
       quote.innerHTML = data.content;
       author.innerHTML = data.originator.name;
       main.style.display = "block"
+      
       setTimeout(function() {
          loader.style.display = "none"
       }, 500)
-
-
    })
    .catch(err => {
 	console.log(err);
